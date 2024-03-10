@@ -78,7 +78,7 @@ body {
 
 .progress-bar div {
     height: 100%;
-    width: 0%; /* This would be updated using JavaScript */
+    width: 0%; /
     background-color: #4CAF50;
 }
 
