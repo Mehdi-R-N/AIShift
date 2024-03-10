@@ -1,0 +1,125 @@
+/* ImportCsv.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: lightgrey;
+    overflow: hidden;
+    padding: 14px 16px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a, .navbar select {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar select {
+    border: none;
+    background-color: lightgrey;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 48px);
+}
+
+.dropzone {
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #4CAF50;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.browse-btn {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.progress-bar {
+    width: 500px;
+    height: 30px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 0%; /* This would be updated using JavaScript */
+    background-color: #4CAF50;
+}
+
+.file-list {
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.csv-table-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 250px;  /* Modify as needed */
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+
+  .upload-message {
+    color: green;
+    font-weight: bold;
+  }
