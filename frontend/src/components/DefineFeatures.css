@@ -52,7 +52,7 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 50%;
-    padding: 20px 24px;  /* Adjust padding to make the buttons bigger */
+    padding: 20px 24px;  
   }
   
   .button-circle:hover {
@@ -135,7 +135,7 @@ table, th, td {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 50%;
-  padding: 20px 24px;  /* Adjust padding to make the buttons bigger */
+  padding: 20px 24px;  
 }
 
 .button-circle:hover {
