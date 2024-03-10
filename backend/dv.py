@@ -15,8 +15,7 @@
 #         print("Cleaned data not found for this user.")
 #         return None
 
-# user_id = "some_user_id"  # This could be input from the user or any other mechanism
-# df = load_cleaned_data(user_id)
+
 
 
 
@@ -130,7 +129,7 @@
 #     elif plot_type == "line":
 #         sns.lineplot(data=df, x=feature1, y=feature2)
 #     elif plot_type == "bar":
-#         sns.barplot(data=df, x=feature1, y=feature2, estimator=sum)  # estimator can be mean, median, sum, etc.
+#         sns.barplot(data=df, x=feature1, y=feature2, estimator=sum)  
 #     else:
 #         print(f"Plot type {plot_type} not recognized.")
 #         return
@@ -154,7 +153,7 @@
 #             if resp == 'yes':
 #                 compare_two_features(df, feature, user_response, "scatter")
 
-#         if 'date' in user_response:  # assuming date columns contain the keyword 'date'
+#         if 'date' in user_response:  
 #             print("Line Plot: Shows the trend of a numeric feature over time.")
 #             resp = input(f"Do you want a line plot of {feature} against {user_response}? (yes/no) ").strip().lower()
 #             if resp == 'yes':
@@ -188,7 +187,7 @@
 #         if resp == 'yes':
 #             generate_visualization(df, feature, "kde")
     
-#     elif df[feature].nunique() < 10:  # assuming categorical feature
+#     elif df[feature].nunique() < 10: 
 #         print("Bar Plot: Displays frequency of each category.")
 #         resp = input(f"Do you want a bar plot for {feature}? (yes/no) ").strip().lower()
 #         if resp == 'yes':
@@ -220,11 +219,5 @@
             
 
 # if __name__ == "__main__":
-#     # This is a dummy dataframe for testing. You can replace this with your actual data.
-#     dummy_data = {
-#         'feature1': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
-#         'feature2': [5, 15, 25, 35, 45, 55, 65, 75, 85, 95]
-#     }
-#     df = pd.DataFrame(dummy_data)
-#     interactive_data_visualization(df)
+#   #     interactive_data_visualization(df)
 
