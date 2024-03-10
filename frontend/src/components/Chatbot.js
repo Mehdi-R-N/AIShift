@@ -63,7 +63,7 @@ const Chatbot = () => {
 
     const clearChatHistory = async () => {
         try {
-            // If you want to clear the chat history on your backend, use the below request
+            
             await axios.delete(`http://localhost:8000/clearChat/user/${userId}`);
 
             // Clear the chat history on frontend
