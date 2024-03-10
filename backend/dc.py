@@ -251,8 +251,8 @@ def handle_date_conversion(df, user_id, user_input=None):
 #         options = {
 #     'clip': lambda x: x.clip(lower=mean - 2 * std_dev, upper=mean + 2 * std_dev).reindex(df.index),
 #     'replace': lambda x: pd.Series(np.where(np.abs(zscore(x)) > 2, median, x), index=df.index),
-#     'remove': lambda x: x,  # We handle the removal later
-#     'transform': lambda x: pd.Series(np.log1p(x), index=df.index),  # You may need to handle negative values here
+#     'remove': lambda x: x,  
+#     'transform': lambda x: pd.Series(np.log1p(x), index=df.index),  
 #     'ignore': lambda x: x
 # }
 
@@ -267,7 +267,7 @@ def handle_date_conversion(df, user_id, user_input=None):
 #         chosen_option = list(options.keys())[user_choice]
 #         df[col] = options[chosen_option](df[col])
 
-#         # If the "remove" option was chosen, you'll need to drop the rows from the entire dataframe
+#         
 #         if chosen_option == "remove":
 #             df = df.loc[~(np.abs(zscore(df[col])) > 2)]
 
@@ -353,8 +353,6 @@ def handle_date_conversion(df, user_id, user_input=None):
 # #  Handle Translate Language
 # def translate_language(df, col, src_lang, target_lang):
 #     # A skeleton for translating text in a specific column
-#     # Implement this function based on the specific translation library you are using
-#     pass
 
 # # ----------------------------------------------------------------
 
@@ -437,7 +435,7 @@ def handle_date_conversion(df, user_id, user_input=None):
 #     print_initial_missing_values_summary(df)
     
 #     # Check for missing values
-#     decision_stack = DecisionStack()  # initialize the DecisionStack here
+#     decision_stack = DecisionStack()  
 #     df = check_for_missing_values(df)
     
 #     # Handle outliers
