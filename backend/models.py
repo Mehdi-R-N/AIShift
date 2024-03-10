@@ -18,8 +18,8 @@ class Chat(Base):
     __tablename__ = "chat"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey('users.id'))  # Changed String to Integer
-    content = Column(String(5000))  # For instance, assuming chat content might be long
+    user_id = Column(Integer, ForeignKey('users.id')) 
+    content = Column(String(5000))  
     sender = Column(String(1000))
     timestamp = Column(DateTime(timezone=True), default=func.now())   
     
